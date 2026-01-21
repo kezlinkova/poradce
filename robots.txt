@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://poradceprozdravi.cz/sitemap.xml
