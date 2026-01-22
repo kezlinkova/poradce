@@ -13,7 +13,7 @@ Website for a health advisor & pharmacist offering individual consultations on m
 |----------|-----|-------|
 | `--color-bg` | `#FAFAF8` | Main background |
 | `--color-bg-alt` | `#F5F5F2` | Alternate sections |
-| `--color-primary` | `#6B8E6B` | Muted green accents |
+| `--color-primary` | `#6B8E6B` | Muted green accents, CTA background |
 | `--color-primary-dark` | `#5A7A5A` | Hover states |
 | `--color-primary-light` | `#E8F0E8` | Light green backgrounds |
 | `--color-text` | `#4A4A48` | Main text |
@@ -25,7 +25,8 @@ Website for a health advisor & pharmacist offering individual consultations on m
 poradceprozdravi/
 ├── assets/
 │   └── img/
-│       ├── logo.png              # Mandala logo
+│       ├── logo.jpg              # Mandala logo (header)
+│       ├── favicon.jpg           # Favicon (browser tab)
 │       ├── hero-home.jpg         # Homepage hero (flowers)
 │       ├── hero-about.jpg        # O mně hero (birch leaves)
 │       ├── hero-leky.jpg         # Lékové poradenství (capsules)
@@ -44,7 +45,9 @@ poradceprozdravi/
 ├── doplnky-stravy.html           # Supplements consultations
 ├── odvykani-koureni.html         # Smoking cessation
 ├── lekce-jogy.html               # Private yoga lessons
-└── kontakt.html                  # Contact page
+├── kontakt.html                  # Contact page
+├── robots.txt                    # Search engine access rules
+└── sitemap.xml                   # Sitemap for SEO
 ```
 
 ## Navigation
@@ -73,8 +76,11 @@ poradceprozdravi/
 - `.credentials` - Credentials/qualifications box
 - `.faq-list` / `.faq-item` - FAQ styling
 - `.services-strip` - Links to other services at bottom
+- `.cta` - Call-to-action section (green background)
 
-## Service Page Template
+## Page Structure
+
+### Service Page Template
 Each service page follows identical structure:
 1. Hero with title + intro + CTA
 2. "Pro koho je služba vhodná" (bullet list)
@@ -82,7 +88,22 @@ Each service page follows identical structure:
 4. "Jak spolupráce probíhá" (3 steps)
 5. "Cena a délka" (info-box)
 6. "Časté dotazy" (FAQ list)
-7. "Další služby" strip (links to other services)
+7. CTA section (green, call-to-action)
+8. "Další služby" strip (links to other services)
+9. Footer
+
+### CTA Section
+Green section before footer on every page with:
+- Headline specific to the page
+- Short description
+- Primary button (mailto) + secondary button (contact/services)
+
+## SEO
+- `robots.txt` - allows all crawlers, references sitemap
+- `sitemap.xml` - all 8 pages with priorities
+- Meta descriptions on all pages
+- Favicon on all pages
+- Sitemap URL: https://poradceprozdravi.cz/sitemap.xml
 
 ## Pricing
 - Standard consultation (60 min): 1 000 Kč
@@ -107,4 +128,4 @@ Each service page follows identical structure:
 - Accessibility: skip-link, proper heading structure, focus states
 
 ## Content Owner
-Mgr. Kristýna Šubrtová (placeholder name from source images)
+Placeholder - update with real contact info before launch
