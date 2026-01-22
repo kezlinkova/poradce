@@ -808,3 +808,47 @@ a.card:hover .card__title {
 .header__logo-wrapper:hover {
     color: var(--color-primary);
 }
+
+/* ============================================
+   CTA Section
+   ============================================ */
+.cta {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    padding: var(--space-2xl) 0;
+    text-align: center;
+}
+
+.cta h2 {
+    color: var(--color-white);
+    margin-bottom: var(--space-sm);
+}
+
+.cta p {
+    opacity: 0.9;
+    margin-bottom: var(--space-lg);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta .btn--primary {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border-color: var(--color-white);
+}
+
+.cta .btn--primary:hover {
+    background-color: var(--color-primary-light);
+    border-color: var(--color-primary-light);
+}
+
+.cta .btn--ghost {
+    color: var(--color-white);
+    border-color: var(--color-white);
+}
+
+.cta .btn--ghost:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
