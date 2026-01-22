@@ -98,6 +98,26 @@ Green section before footer on every page with:
 - Short description
 - Primary button (mailto) + secondary button (contact/services)
 
+## Images
+All hero images optimized with ImageMagick:
+- Max width: 1920px
+- Quality: 80%
+- Metadata stripped
+- Total size: ~2.7 MB (reduced from 22 MB, 88% savings)
+
+| Image | Size |
+|-------|------|
+| hero-stravovani.jpg | 504 KB |
+| hero-kontakt.jpg | 450 KB |
+| hero-home.jpg | 376 KB |
+| hero-doplnky.jpg | 371 KB |
+| hero-about.jpg | 274 KB |
+| hero-joga.jpg | 265 KB |
+| hero-leky.jpg | 166 KB |
+| hero-koureni.jpg | 91 KB |
+| logo.jpg | 90 KB |
+| favicon.jpg | 90 KB |
+
 ## SEO
 - `robots.txt` - allows all crawlers, references sitemap
 - `sitemap.xml` - all 8 pages with priorities
