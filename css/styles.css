@@ -149,10 +149,6 @@ p:last-child {
     margin-bottom: 0;
 }
 
-.lead {
-    font-size: var(--font-size-lg);
-    color: var(--color-text-light);
-}
 
 /* ============================================
    Layout Utilities
@@ -613,12 +609,6 @@ a.card:hover .card__title {
     margin-bottom: var(--space-md);
 }
 
-.contact-block__phone {
-    font-size: var(--font-size-lg);
-    color: var(--color-text);
-    display: block;
-    margin-bottom: var(--space-lg);
-}
 
 .contact-block__note {
     color: var(--color-text-muted);
@@ -678,21 +668,6 @@ a.card:hover .card__title {
     opacity: 0.6;
 }
 
-.footer__credit {
-    font-size: var(--font-size-sm);
-    opacity: 0.5;
-    width: 100%;
-    text-align: center;
-}
-
-.footer__credit a {
-    color: var(--color-bg);
-    opacity: 0.8;
-}
-
-.footer__credit a:hover {
-    opacity: 1;
-}
 
 /* ============================================
    Page Wrapper (for sticky footer)
