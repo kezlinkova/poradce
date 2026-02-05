@@ -103,10 +103,19 @@ Green section before footer on every page with:
 - Short description
 - Primary button (mailto) + secondary button (contact/services)
 
+## Typography
+- Body text: System sans-serif font stack (`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, ...`)
+- Hero h1: Serif font (`Georgia, "Palatino Linotype", "Book Antiqua", Palatino, serif`) — darker color `#2A2A28`
+- Hero p: Darker color `#3A3A38`
+- Homepage h1: Larger size (3.5rem)
+- H2: `--font-size-3xl` (2rem)
+- Czech typographic orphans: All single-letter prepositions (a, i, k, o, s, u, v, z) use `&nbsp;` to prevent orphans at line ends
+
 ## Hero Image Overlay
 Hero images use a CSS gradient overlay for readability:
 - **Mobile**: Uniform semi-transparent overlay (`rgba(250,250,248, 0.85)`)
 - **Desktop (900px+)**: Horizontal gradient — vivid/transparent edges, opaque center behind text
+- **Homepage**: Taller hero (min-height 600px), radial gradient centered on text area, more vivid image on all sides
 
 ## Images
 All hero images optimized with ImageMagick:
