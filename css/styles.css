@@ -308,6 +308,10 @@ p:last-child {
     align-items: center;
 }
 
+.nav__dropdown > .nav__link {
+    cursor: pointer;
+}
+
 .nav__dropdown-content {
     display: none;
     position: absolute;
