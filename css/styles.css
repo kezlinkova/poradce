@@ -127,7 +127,7 @@ h1 {
 }
 
 h2 {
-    font-size: var(--font-size-3xl);
+    font-size: var(--font-size-2xl);
     font-weight: 600;
 }
 
@@ -366,6 +366,10 @@ p:last-child {
     letter-spacing: -0.02em;
     line-height: 1.2;
     color: #2A2A28;
+}
+
+.hero h1 br {
+    display: none;
 }
 
 .hero p {
@@ -735,6 +739,10 @@ a.card:hover .card__title {
         font-size: var(--font-size-4xl);
     }
 
+    h2 {
+        font-size: var(--font-size-3xl);
+    }
+
     .header__inner {
         flex-direction: row;
         justify-content: space-between;
@@ -832,6 +840,10 @@ a.card:hover .card__title {
 
     .hero--home h1 {
         font-size: 3.5rem;
+    }
+
+    .hero--home h1 br {
+        display: inline;
     }
 
     .hero--home::before {
