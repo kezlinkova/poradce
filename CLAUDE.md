@@ -1,12 +1,13 @@
 # Poradce pro zdraví - Project Documentation
 
 ## Overview
-Website for a health advisor & pharmacist offering individual consultations on medications, nutrition, supplements, smoking cessation, and yoga.
+Website for a health advisor & pharmacist (Mgr. Kristýna Šubrtová) offering individual consultations on medications, nutrition, supplements, smoking cessation, and private yoga lessons.
 
 ## Tech Stack
 - Pure HTML5, CSS3
 - No JavaScript, no frameworks, no build tools
 - System fonts (no Google Fonts)
+- Clean URLs via Apache `.htaccess` RewriteEngine (removes .html extensions)
 
 ## Color Palette
 | Variable | Hex | Usage |
@@ -46,37 +47,41 @@ poradceprozdravi/
 ├── odvykani-koureni.html         # Smoking cessation
 ├── lekce-jogy.html               # Private yoga lessons
 ├── kontakt.html                  # Contact page
+├── .htaccess                     # Apache clean URL rewrite rules
 ├── robots.txt                    # Search engine access rules
 └── sitemap.xml                   # Sitemap for SEO
 ```
 
-## Navigation
-- Úvod (index.html)
-- O mně (o-mne.html)
+## URLs & Navigation
+All internal links use clean URLs (without `.html`), e.g. `/o-mne`, `/kontakt`, `/lekove-poradenstvi`. The `.htaccess` file handles rewriting on the server.
+
+- Úvod (`/`)
+- O mně (`/o-mne`)
 - Služby (dropdown):
-  - Lékové poradenství
-  - Zdravé stravování
-  - Doplňky stravy
-  - Odvykání kouření
-  - Lekce jógy
-- Kontakt (kontakt.html)
+  - Lékové poradenství (`/lekove-poradenstvi`)
+  - Zdravé stravování (`/zdrave-stravovani`)
+  - Doplňky stravy (`/doplnky-stravy`)
+  - Odvykání kouření (`/odvykani-koureni`)
+  - Lekce jógy (`/lekce-jogy`)
+- Kontakt (`/kontakt`)
 
 ## Key CSS Classes
 - `.header` - Sticky header with logo
 - `.hero` - Hero sections
-- `.hero--with-image` - Hero with background image
+- `.hero--with-image` - Hero with background image (horizontal gradient overlay on desktop)
 - `.hero--small` - Smaller hero for subpages
 - `.section` / `.section--alt` - Content sections
 - `.container` / `.container--narrow` - Max-width containers
 - `.card` - Service cards with hover effect
 - `.btn--primary` / `.btn--ghost` - Button styles
-- `.info-box` - Highlighted info boxes (pricing)
+- `.info-box` - Highlighted info boxes (pricing, GDPR)
 - `.steps` - Process steps with numbered circles
 - `.bullet-list` - Lists with green bullet points
 - `.credentials` - Credentials/qualifications box
 - `.faq-list` / `.faq-item` - FAQ styling
 - `.services-strip` - Links to other services at bottom
 - `.cta` - Call-to-action section (green background)
+- `.footer__info` - Business info in footer
 
 ## Page Structure
 
@@ -97,6 +102,11 @@ Green section before footer on every page with:
 - Headline specific to the page
 - Short description
 - Primary button (mailto) + secondary button (contact/services)
+
+## Hero Image Overlay
+Hero images use a CSS gradient overlay for readability:
+- **Mobile**: Uniform semi-transparent overlay (`rgba(250,250,248, 0.85)`)
+- **Desktop (900px+)**: Horizontal gradient — vivid/transparent edges, opaque center behind text
 
 ## Images
 All hero images optimized with ImageMagick:
@@ -120,25 +130,47 @@ All hero images optimized with ImageMagick:
 
 ## SEO
 - `robots.txt` - allows all crawlers, references sitemap
-- `sitemap.xml` - all 8 pages with priorities
+- `sitemap.xml` - all 8 pages with priorities, clean URLs
 - Meta descriptions on all pages
+- Canonical tags (`<link rel="canonical">`) on all pages
+- Open Graph tags (`og:type`, `og:url`, `og:title`, `og:description`, `og:image`) on all pages
 - Favicon on all pages
 - Sitemap URL: https://poradceprozdravi.cz/sitemap.xml
 
 ## Pricing
-- Standard consultation (60 min): 1 000 Kč
-- Short consultation (30 min): 500 Kč
-- Yoga lesson (60 min): 800 Kč
+- Osobní konzultace (60 min): 1 200 Kč
+- Online konzultace (45 min): 1 000 Kč
+- Navazující konzultace (30 min): 500 Kč
+- Jednotlivý, konkrétní dotaz: do 500 Kč (po domluvě)
+- Lekce jógy (60 min): 1 200–1 500 Kč (dle pronájmu prostor)
+- Balíček 5 lekcí jógy: sleva 10 %
+- Platba předem
 
 ## Contact
-- Email: info@poradceprozdravi.cz (placeholder)
-- Phone: +420 000 000 000 (placeholder)
+- Email: info@poradceprozdravi.cz
 - No contact form (mailto links only)
+- No phone on public pages (phone only in fakturační údaje)
+
+## GDPR & Business Info
+Contact page includes:
+- GDPR info box (Nařízení EU 2016/679)
+- Fakturační údaje:
+  - Mgr. Kristýna Šubrtová
+  - IČO: 05273021
+  - Sídlo: Jižní VII, Praha 4, 141 00
+  - Telefon: +420 737 915 403
+
+## Footer
+All pages share the same footer with:
+- Logo text "Poradce pro zdraví"
+- Navigation links (Úvod, O mně, Kontakt)
+- Business info (Mgr. Kristýna Šubrtová | IČO: 05273021, Jižní VII, Praha 4, 141 00)
+- Copyright 2026
 
 ## Responsive Breakpoints
 - Mobile: < 640px (single column)
 - Tablet: >= 640px (2 columns)
-- Desktop: >= 900px (3 columns, larger spacing)
+- Desktop: >= 900px (3 columns, larger spacing, hero gradient)
 
 ## Design Principles
 - Calm, airy design with lots of whitespace
@@ -148,4 +180,4 @@ All hero images optimized with ImageMagick:
 - Accessibility: skip-link, proper heading structure, focus states
 
 ## Content Owner
-Placeholder - update with real contact info before launch
+Mgr. Kristýna Šubrtová — lékárnice, poradkyně pro výživu, lektorka jógy
