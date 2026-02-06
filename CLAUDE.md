@@ -79,29 +79,27 @@ All internal links use clean URLs (without `.html`), e.g. `/o-mne`, `/kontakt`, 
 - `.bullet-list` - Lists with green bullet points
 - `.credentials` - Credentials/qualifications box
 - `.faq-list` / `.faq-item` - FAQ styling
-- `.services-strip` - Links to other services at bottom
 - `.cta` - Call-to-action section (green background)
-- `.footer__info` - Business info in footer
+- `.footer__info` - Business info in footer (only on Kontakt page)
 
 ## Page Structure
 
 ### Service Page Template
 Each service page follows identical structure:
-1. Hero with title + intro + CTA
+1. Hero with title + intro + email CTA button (no ghost button)
 2. "Pro koho je služba vhodná" (bullet list)
 3. "Co společně vyřešíme" (bullet list)
 4. "Jak spolupráce probíhá" (3 steps)
 5. "Cena a délka" (info-box)
 6. "Časté dotazy" (FAQ list)
-7. CTA section (green, call-to-action)
-8. "Další služby" strip (links to other services)
-9. Footer
+7. CTA section (green, email button only)
+8. Footer
 
 ### CTA Section
 Green section before footer on every page with:
 - Headline specific to the page
 - Short description
-- Primary button (mailto) + secondary button (contact/services)
+- Primary button (mailto) only — no ghost/secondary button on service pages and homepage
 
 ## Typography
 - Body text: System sans-serif font stack (`-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, ...`)
@@ -113,7 +111,7 @@ Green section before footer on every page with:
 
 ## Hero Image Overlay
 Hero images use a CSS gradient overlay for readability:
-- **Mobile**: Uniform semi-transparent overlay (`rgba(250,250,248, 0.85)`)
+- **Mobile**: Uniform semi-transparent overlay (`rgba(250,250,248, 0.75)`)
 - **Desktop (900px+)**: Horizontal gradient — vivid/transparent edges, opaque center behind text
 - **Homepage**: Taller hero (min-height 600px), radial gradient centered on text area, more vivid image on all sides
 
@@ -173,8 +171,11 @@ Contact page includes:
 All pages share the same footer with:
 - Logo text "Poradce pro zdraví"
 - Navigation links (Úvod, O mně, Kontakt)
-- Business info (Mgr. Kristýna Šubrtová | IČO: 05273021, Jižní VII, Praha 4, 141 00)
 - Copyright 2026
+- Business info (IČO, adresa) only on Kontakt page
+
+## Navigation
+- Služby dropdown uses `tabindex="0"` on the trigger `<a>` element for mobile touch support (`:focus-within`)
 
 ## Responsive Breakpoints
 - Mobile: < 640px (single column)
