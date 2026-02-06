@@ -565,40 +565,6 @@ a.card:hover .card__title {
 }
 
 /* ============================================
-   Service Links Strip
-   ============================================ */
-.services-strip {
-    background-color: var(--color-bg-alt);
-    padding: var(--space-xl) 0;
-}
-
-.services-strip__title {
-    text-align: center;
-    margin-bottom: var(--space-lg);
-}
-
-.services-strip__links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: var(--space-sm);
-}
-
-.services-strip__link {
-    background-color: var(--color-white);
-    padding: var(--space-sm) var(--space-md);
-    border-radius: var(--radius);
-    font-size: var(--font-size-sm);
-    box-shadow: var(--shadow);
-    transition: all var(--transition);
-}
-
-.services-strip__link:hover {
-    background-color: var(--color-primary);
-    color: var(--color-white);
-}
-
-/* ============================================
    Contact Page
    ============================================ */
 .contact-block {
@@ -823,10 +789,6 @@ a.card:hover .card__title {
 
     .hero--home h1 {
         font-size: 3.5rem;
-    }
-
-    .hero--home h1 br {
-        display: inline;
     }
 
     .hero--home::before {
