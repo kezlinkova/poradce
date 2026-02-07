@@ -176,6 +176,7 @@ All pages share the same footer with:
 
 ## Navigation
 - Služby dropdown uses `tabindex="0"` on the trigger `<a>` element for mobile touch support (`:focus-within`)
+- Dropdown menu aligned right (`left: auto; right: 0`) on tablet (640px+) to prevent overflow
 
 ## Responsive Breakpoints
 - Mobile: < 640px (single column)
