@@ -80,7 +80,7 @@ All internal links use clean URLs (without `.html`), e.g. `/o-mne`, `/kontakt`, 
 - `.credentials` - Credentials/qualifications box
 - `.faq-list` / `.faq-item` - FAQ styling
 - `.cta` - Call-to-action section (green background)
-- `.footer__info` - Business info in footer (only on Kontakt page)
+- `.footer__info` - Business info (currently unused, was in footer)
 
 ## Page Structure
 
@@ -172,7 +172,7 @@ All pages share the same footer with:
 - Logo text "Poradce pro zdraví"
 - Navigation links (Úvod, O mně, Kontakt)
 - Copyright 2026
-- Business info (IČO, adresa) only on Kontakt page
+- Business info (IČO, adresa) is in the contact page content section, not in the footer
 
 ## Navigation
 - Služby dropdown uses `tabindex="0"` on the trigger `<a>` element for mobile touch support (`:focus-within`)
