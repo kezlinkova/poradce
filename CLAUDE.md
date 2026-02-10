@@ -80,7 +80,7 @@ All internal links use clean URLs (without `.html`), e.g. `/o-mne`, `/kontakt`, 
 - `.credentials` - Credentials/qualifications box
 - `.faq-list` / `.faq-item` - FAQ styling
 - `.cta` - Call-to-action section (green background)
-- `.footer__info` - Business info (currently unused, was in footer)
+- `.footer__info` - Business info (unused CSS, removed from HTML)
 
 ## Page Structure
 
@@ -189,6 +189,13 @@ All pages share the same footer with:
 - Subtle shadows
 - Mobile-first responsive CSS
 - Accessibility: skip-link, proper heading structure, focus states
+
+## Legal/Regulatory Restrictions
+- Do NOT use word "odborné" (expert/professional) anywhere — regulatory restriction
+- Service formerly "Lékové poradenství" is now "Poradenství o léčivech"
+- Use "poradenství k bezpečnému užívání léčiv" as service description
+- FAQ answers should not name the service directly — use "Konzultace je doplňkovou službou..."
+- Old URL `/lekove-poradenstvi` redirects to `/poradenstvi-o-lecivech` via 301
 
 ## Content Owner
 Mgr. Kristýna Šubrtová — lékárnice, poradkyně pro výživu, lektorka jógy
