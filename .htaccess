@@ -9,6 +9,9 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(.*)$ $1.html [L]
 
+# Přesměrování staré URL na novou (301 redirect)
+RewriteRule ^lekove-poradenstvi$ /poradenstvi-o-lecivech [R=301,L]
+
 # Přesměrování z .html na čisté URL (301 redirect)
 RewriteCond %{THE_REQUEST} /([^.]+)\.html [NC]
 RewriteRule ^ /%1 [R=301,L]

@@ -30,7 +30,7 @@ poradceprozdravi/
 │       ├── favicon.jpg           # Favicon (browser tab)
 │       ├── hero-home.jpg         # Homepage hero (flowers)
 │       ├── hero-about.jpg        # O mně hero (birch leaves)
-│       ├── hero-leky.jpg         # Lékové poradenství (capsules)
+│       ├── hero-leky.jpg         # Poradenství o léčivech (capsules)
 │       ├── hero-stravovani.jpg   # Zdravé stravování (food)
 │       ├── hero-doplnky.jpg      # Doplňky stravy (turmeric)
 │       ├── hero-koureni.jpg      # Odvykání kouření (leaf)
@@ -41,7 +41,7 @@ poradceprozdravi/
 ├── materialy/                    # Source images (not used on web)
 ├── index.html                    # Homepage
 ├── o-mne.html                    # About page
-├── lekove-poradenstvi.html       # Medication consultations
+├── poradenstvi-o-lecivech.html    # Medication consultations
 ├── zdrave-stravovani.html        # Nutrition consultations
 ├── doplnky-stravy.html           # Supplements consultations
 ├── odvykani-koureni.html         # Smoking cessation
@@ -53,12 +53,12 @@ poradceprozdravi/
 ```
 
 ## URLs & Navigation
-All internal links use clean URLs (without `.html`), e.g. `/o-mne`, `/kontakt`, `/lekove-poradenstvi`. The `.htaccess` file handles rewriting on the server.
+All internal links use clean URLs (without `.html`), e.g. `/o-mne`, `/kontakt`, `/poradenstvi-o-lecivech`. The `.htaccess` file handles rewriting on the server. Old URL `/lekove-poradenstvi` redirects via 301.
 
 - Úvod (`/`)
 - O mně (`/o-mne`)
 - Služby (dropdown):
-  - Lékové poradenství (`/lekove-poradenstvi`)
+  - Poradenství o léčivech (`/poradenstvi-o-lecivech`)
   - Zdravé stravování (`/zdrave-stravovani`)
   - Doplňky stravy (`/doplnky-stravy`)
   - Odvykání kouření (`/odvykani-koureni`)
